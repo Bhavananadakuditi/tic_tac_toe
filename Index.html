@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Ultimate Edition</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="Index.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        
+        <div class="game-info">
+            <div class="scoreboard">
+                <div class="score x">
+                    <span>Player X</span>
+                    <span id="score-x" class="score-value">0</span>
+                </div>
+                <div class="score o">
+                    <span>Player O</span>
+                    <span id="score-o" class="score-value">0</span>
+                </div>
+            </div>
+            
+            <div id="current-player" class="current-player x">Player X's Turn</div>
+        </div>
+        
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="reset-btn" class="btn btn-reset">Reset Board</button>
+            <button id="new-game-btn" class="btn btn-new-game">New Game</button>
+        </div>
+        
+        <div id="win-modal" class="modal">
+            <div class="modal-content">
+                <h2>Game Over!</h2>
+                <div id="winner-text" class="winner-text"></div>
+                <button id="close-modal" class="btn btn-new-game">Continue</button>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>
